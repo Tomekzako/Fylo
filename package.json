@@ -1,0 +1,22 @@
+{
+  "name": "fylo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tomekzako/Fylo.git"
+  },
+  "author": "Tomek Chyc",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tomekzako/Fylo/issues"
+  },
+  "homepage": "https://github.com/Tomekzako/Fylo#readme",
+  "dependencies": {
+    "node-sass": "^4.9.4"
+  }
+}
