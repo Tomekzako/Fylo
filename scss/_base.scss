@@ -24,7 +24,8 @@ $bp-smallest: 31.25em; //500px
 html {
     font-size: 62.5%;
     box-sizing: border-box;
-    @media only screen and( max-width: $bp-largest) {
+
+    @media only screen and(max-width: $bp-largest) {
         font-size: 50%;
     }
 }
@@ -37,5 +38,5 @@ body {
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
-    max-width: 120rem;
+    max-width: 115rem;
 }
