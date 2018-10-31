@@ -60,6 +60,10 @@ $font-primary-light: #827eca;
   z-index: 10;
   padding: 4rem 0;
 
+  @media only screen and(max-width: $bp-large) {
+    padding: 4rem;
+  }
+
   &__nav {
     display: flex;
     align-items: center;
@@ -104,10 +108,13 @@ $font-primary-light: #827eca;
   color: #fff;
   min-height: 95vh;
 
+  @media only screen and(max-width: $bp-large) {
+    padding: 0 4rem;
+  }
+
   @media only screen and(max-width: $bp-small) {
     background: linear-gradient(to bottom, $font-primary, $font-primary-light);
-    padding: 2.5rem;
-    height: auto;
+    min-height: auto;
   }
 
   display: flex;
@@ -119,6 +126,7 @@ $font-primary-light: #827eca;
 
     @media only screen and(max-width: $bp-small) {
       flex-direction: column;
+      margin: 20rem 0;
     }
   }
 
@@ -129,7 +137,7 @@ $font-primary-light: #827eca;
     @media only screen and(max-width: $bp-small) {
       flex: 0 0 40%;
       order: 2;
-      margin-top: 3rem;
+      margin-top: 5rem;
       text-align: center;
       padding-right: 0;
     }
@@ -151,11 +159,11 @@ $font-primary-light: #827eca;
 
     @media only screen and(max-width: $bp-small) {
       width: 100%;
-      height: 30rem;
+      height: 35rem;
     }
 
     @media only screen and(max-width: $bp-smallest) {
-      height: 25rem;
+      height: 30rem;
     }
   }
 }
@@ -168,8 +176,8 @@ $font-primary-light: #827eca;
   flex-wrap: wrap;
   align-items: center;
 
-  @media only screen and(max-width: $bp-small) {
-    padding: 0 2.5rem;
+  @media only screen and(max-width: $bp-large) {
+    padding: 0 4rem;
   }
 
   &__banner {
@@ -259,6 +267,10 @@ $font-primary-light: #827eca;
   padding: 20rem 0 15rem;
   clip-path: polygon(0 0, 100% 10rem, 100% 100%, 0 100%);
   background-color: $font-primary-dark;
+
+  @media only screen and(max-width: $bp-large) {
+    padding: 20rem 4rem 15rem;
+  }
 
   &__contact {
     flex: 0 0 23%;

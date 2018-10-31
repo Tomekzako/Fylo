@@ -57,7 +57,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
-  max-width: 120rem;
+  max-width: 1200px;
   position: relative; }
 
 .heading-primary {
@@ -105,6 +105,9 @@ body {
   width: 100%;
   z-index: 10;
   padding: 4rem 0; }
+  @media only screen and (max-width: 1200px) {
+    .header {
+      padding: 4rem; } }
   .header__nav {
     display: flex;
     align-items: center; }
@@ -137,17 +140,20 @@ body {
   min-height: 95vh;
   display: flex;
   align-items: center; }
+  @media only screen and (max-width: 1200px) {
+    .banner {
+      padding: 0 4rem; } }
   @media only screen and (max-width: 767px) {
     .banner {
       background: linear-gradient(to bottom, #100a6e, #827eca);
-      padding: 2.5rem;
-      height: auto; } }
+      min-height: auto; } }
   .banner__main {
     display: flex;
     align-items: center; }
     @media only screen and (max-width: 767px) {
       .banner__main {
-        flex-direction: column; } }
+        flex-direction: column;
+        margin: 20rem 0; } }
   .banner__info {
     flex: 0 0 58%;
     padding-right: 3rem; }
@@ -155,7 +161,7 @@ body {
       .banner__info {
         flex: 0 0 40%;
         order: 2;
-        margin-top: 3rem;
+        margin-top: 5rem;
         text-align: center;
         padding-right: 0; } }
     .banner__info--btn {
@@ -172,10 +178,10 @@ body {
     @media only screen and (max-width: 767px) {
       .banner__banner {
         width: 100%;
-        height: 30rem; } }
+        height: 35rem; } }
     @media only screen and (max-width: 480px) {
       .banner__banner {
-        height: 25rem; } }
+        height: 30rem; } }
 
 .products {
   margin: 10rem 0;
@@ -184,9 +190,9 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center; }
-  @media only screen and (max-width: 767px) {
+  @media only screen and (max-width: 1200px) {
     .products {
-      padding: 0 2.5rem; } }
+      padding: 0 4rem; } }
   .products__banner {
     background-image: url("../images/illustration-features.svg");
     background-size: contain;
@@ -245,6 +251,9 @@ body {
   padding: 20rem 0 15rem;
   clip-path: polygon(0 0, 100% 10rem, 100% 100%, 0 100%);
   background-color: #07043b; }
+  @media only screen and (max-width: 1200px) {
+    .footer {
+      padding: 20rem 4rem 15rem; } }
   .footer__contact {
     flex: 0 0 23%;
     display: flex;
