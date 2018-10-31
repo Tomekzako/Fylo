@@ -44,6 +44,7 @@ $font-primary-light: #827eca;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
     transform: translateY(-2px);
   }
+
   &:active {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
     transform: translateY(-1px);
@@ -75,6 +76,7 @@ $font-primary-light: #827eca;
       padding: 1rem;
       margin-right: 2rem;
       position: relative;
+
       &::after {
         content: "";
         position: absolute;
@@ -85,6 +87,7 @@ $font-primary-light: #827eca;
         background-color: currentColor;
         transition: all 0.2s;
       }
+
       &:hover,
       &:active {
         &::after {
@@ -253,7 +256,7 @@ $font-primary-light: #827eca;
 }
 
 .footer {
-  padding: 15rem 0 10rem;
+  padding: 20rem 0 15rem;
   clip-path: polygon(0 0, 100% 10rem, 100% 100%, 0 100%);
   background-color: $font-primary-dark;
 
@@ -278,6 +281,11 @@ $font-primary-light: #827eca;
 
       span {
         margin-left: 1rem;
+      }
+
+      &:hover {
+        cursor: pointer;
+        color: $font-primary-light;
       }
     }
   }
@@ -306,6 +314,16 @@ $font-primary-light: #827eca;
         font-size: 2rem;
         padding-top: 0;
         padding-bottom: 1.4rem;
+      }
+
+      a {
+        color: #fff;
+        text-decoration: none;
+
+        &:hover {
+          cursor: pointer;
+          color: $font-primary-light;
+        }
       }
     }
   }

@@ -242,7 +242,7 @@ body {
     padding: 1.3rem 6.5rem; }
 
 .footer {
-  padding: 15rem 0 10rem;
+  padding: 20rem 0 15rem;
   clip-path: polygon(0 0, 100% 10rem, 100% 100%, 0 100%);
   background-color: #07043b; }
   .footer__contact {
@@ -262,6 +262,9 @@ body {
       align-items: center; }
       .footer__contact a span {
         margin-left: 1rem; }
+      .footer__contact a:hover {
+        cursor: pointer;
+        color: #827eca; }
   .footer__more {
     flex: 0 0 45%;
     border-left: 1px solid #fff;
@@ -282,6 +285,12 @@ body {
         font-size: 2rem;
         padding-top: 0;
         padding-bottom: 1.4rem; }
+      .footer__more--li a {
+        color: #fff;
+        text-decoration: none; }
+        .footer__more--li a:hover {
+          cursor: pointer;
+          color: #827eca; }
   .footer__form {
     flex: 1;
     display: flex;
