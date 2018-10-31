@@ -83,7 +83,7 @@ body {
   font-size: 1.5rem;
   text-decoration: none;
   border-radius: 3px;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
   font-weight: 600;
   border: none; }
 
@@ -156,7 +156,7 @@ body {
         height: 25rem; } }
 
 .products {
-  margin: 50px 0;
+  margin: 10rem 0;
   width: 100%;
   text-align: center;
   display: flex;
@@ -200,7 +200,7 @@ body {
     border: none;
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
     margin-right: 2rem;
-    transition: all .3s;
+    transition: all 0.3s;
     border-bottom: 3px solid transparent; }
     .products__form input:focus {
       outline: none;
@@ -224,19 +224,22 @@ body {
   clip-path: polygon(0 0, 100% 10rem, 100% 100%, 0 100%);
   background-color: #07043b; }
   .footer__contact {
-    flex: 0 0 25%;
+    flex: 0 0 23%;
     display: flex;
     flex-direction: column;
     align-items: flex-start; }
     .footer__contact--logo {
-      margin-bottom: 2rem; }
+      margin-bottom: 3.5rem;
+      height: 5.7rem; }
     .footer__contact a {
       color: #fff;
       padding: 1rem 0;
       text-decoration: none;
-      font-size: 1.5rem; }
+      font-size: 1.7rem;
+      display: flex;
+      align-items: center; }
       .footer__contact a span {
-        margin-left: .5rem; }
+        margin-left: 1rem; }
   .footer__more {
     flex: 0 0 45%;
     border-left: 1px solid #fff;
@@ -247,32 +250,35 @@ body {
     padding: 0 2rem; }
     .footer__more--ul {
       list-style-type: none;
-      font-size: 1.4rem;
-      padding: 0 3rem; }
+      font-size: 1.6rem;
+      padding: 0 3.5rem;
+      letter-spacing: 0.5px; }
     .footer__more--li {
-      padding: .8rem 0; }
+      padding: 1rem 0; }
       .footer__more--li:nth-of-type(1) {
         font-weight: 600;
-        font-size: 1.5rem;
-        padding-bottom: 1rem; }
+        font-size: 2rem;
+        padding-top: 0;
+        padding-bottom: 1.4rem; }
   .footer__form {
     flex: 1;
     display: flex;
     flex-direction: column;
-    margin-left: 5rem;
+    margin-left: 9rem;
     align-items: flex-end; }
     .footer__form--text {
       color: #fff;
-      font-size: 1.4rem;
+      font-size: 1.6rem;
       text-align: right;
-      padding-bottom: 2rem; }
+      padding-bottom: 3rem; }
     .footer__form--input {
       border: none;
       border-radius: 3px;
-      padding: 1rem 2rem;
+      padding: 1.5rem 2rem;
       font-size: 1.4rem;
-      margin-bottom: 2rem; }
+      margin-bottom: 2rem;
+      width: 100%; }
       .footer__form--input:focus {
         outline: none; }
     .footer__form--btn {
-      padding: 1.1rem 5.5rem; }
+      padding: 1.5rem 8.5rem; }
