@@ -1,5 +1,11 @@
 @import "base";
 
+$default-font-size: 1.6rem;
+
+$font-primary-dark: #07043b;
+$font-primary: #100a6e;
+$font-primary-light: #827eca;
+
 .heading-primary {
   font-size: 4rem;
   text-transform: capitalize;
@@ -10,12 +16,12 @@
   font-size: 3.25rem;
   text-transform: capitalize;
   line-height: 1.4;
-  color: #07043b;
+  color: $font-primary;
 }
 
 .heading-tertiary {
   font-size: 2.1rem;
-  color: #07043b;
+  color: $font-primary;
 }
 
 .btn-main {
@@ -23,12 +29,25 @@
   color: #fff;
   background-color: #06d79d;
   padding: 1.1rem 3rem;
-  font-size: 1.5rem;
+  border: 3px solid #06d79d;
+  font-size: $default-font-size;
   text-decoration: none;
-  border-radius: 3px;
+  border-radius: 5px;
   letter-spacing: 0.5px;
+  transition: all 0.2s;
   font-weight: 600;
-  border: none;
+
+  &:hover {
+    border: 3px solid #06d79d;
+    background-color: transparent;
+    color: #06d79d;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+  }
+  &:active {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    transform: translateY(-1px);
+  }
 }
 
 .header {
@@ -50,23 +69,40 @@
     }
 
     &--btn {
-      font-size: 1.6rem;
+      font-size: $default-font-size;
       color: inherit;
       text-decoration: none;
       padding: 1rem;
       margin-right: 2rem;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 3px;
+        width: 0;
+        background-color: currentColor;
+        transition: all 0.2s;
+      }
+      &:hover,
+      &:active {
+        &::after {
+          width: 100%;
+        }
+      }
     }
   }
 }
 
 .banner {
-  background: linear-gradient(to right, #100a6e, #827eca);
+  background: linear-gradient(to right, $font-primary, $font-primary-light);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
   color: #fff;
   min-height: 95vh;
 
   @media only screen and(max-width: $bp-small) {
-    background: linear-gradient(to bottom, #100a6e, #827eca);
+    background: linear-gradient(to bottom, $font-primary, $font-primary-light);
     padding: 2.5rem;
     height: auto;
   }
@@ -155,7 +191,7 @@
     text-align: left;
 
     &--text {
-      font-size: 1.6rem;
+      font-size: $default-font-size;
       padding-top: 2rem;
       line-height: 1.5;
       color: #8d8d8d;
@@ -165,8 +201,8 @@
   &__text {
     width: 60%;
     margin: 3rem auto;
-    font-size: 1.6rem;
-    color: #100a6e;
+    font-size: $default-font-size;
+    color: $font-primary;
     line-height: 1.4;
     font-weight: 600;
   }
@@ -174,9 +210,9 @@
   &__form {
     input {
       width: 35%;
-      font-size: 1.6rem;
+      font-size: $default-font-size;
       border-radius: 5px;
-      padding: 1.7rem 4rem 1.3rem;
+      padding: $default-font-size 4rem 1.3rem;
       border: none;
       box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
       margin-right: 2rem;
@@ -211,7 +247,7 @@
     }
 
     &--btn {
-      padding: 1.1rem 6.5rem;
+      padding: 1.3rem 6.5rem;
     }
   }
 }
@@ -219,7 +255,7 @@
 .footer {
   padding: 15rem 0 10rem;
   clip-path: polygon(0 0, 100% 10rem, 100% 100%, 0 100%);
-  background-color: #07043b;
+  background-color: $font-primary-dark;
 
   &__contact {
     flex: 0 0 23%;
@@ -257,7 +293,7 @@
 
     &--ul {
       list-style-type: none;
-      font-size: 1.6rem;
+      font-size: $default-font-size;
       padding: 0 3.5rem;
       letter-spacing: 0.5px;
     }
@@ -283,7 +319,7 @@
 
     &--text {
       color: #fff;
-      font-size: 1.6rem;
+      font-size: $default-font-size;
       text-align: right;
       padding-bottom: 3rem;
     }
