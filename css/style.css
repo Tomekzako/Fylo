@@ -43,9 +43,12 @@ html {
   @media only screen and (max-width: 1200px) {
     html {
       font-size: 55%; } }
+  @media only screen and (max-width: 979px) {
+    html {
+      font-size: 50%; } }
   @media only screen and (max-width: 767px) {
     html {
-      font-size: 45%; } }
+      font-size: 46%; } }
   @media only screen and (max-width: 480px) {
     html {
       font-size: 40%; } }
@@ -151,7 +154,7 @@ body {
   align-items: center; }
   @media only screen and (max-width: 1200px) {
     .banner {
-      padding: 0 4rem; } }
+      padding: 0 5rem; } }
   @media only screen and (max-width: 767px) {
     .banner {
       background: linear-gradient(to bottom, #100a6e, #827eca);
@@ -204,7 +207,7 @@ body {
   align-items: center; }
   @media only screen and (max-width: 1200px) {
     .products {
-      padding: 0 4rem; } }
+      padding: 0 5rem; } }
   @media only screen and (min-width: 480px) and (max-width: 767px) {
     .products {
       padding: 0 7rem; } }
@@ -273,6 +276,9 @@ body {
     margin-right: 2rem;
     transition: all 0.3s;
     border-bottom: 3px solid transparent; }
+    @media only screen and (max-width: 979px) {
+      .products__form input {
+        width: 50%; } }
     @media only screen and (max-width: 767px) {
       .products__form input {
         width: 60%;
@@ -310,8 +316,8 @@ body {
   background-color: #07043b; }
   @media only screen and (max-width: 1200px) {
     .footer {
-      padding-left: 4rem;
-      padding-right: 4rem; } }
+      padding-left: 5rem;
+      padding-right: 5rem; } }
   @media only screen and (min-width: 480px) and (max-width: 767px) {
     .footer {
       padding-left: 7rem;
@@ -332,8 +338,10 @@ body {
         text-align: center; } }
     .footer__contact--img img {
       margin-bottom: 3.5rem;
-      height: 5.7rem;
-      padding: 0 1rem; }
+      height: 5.7rem; }
+      @media only screen and (max-width: 1200px) {
+        .footer__contact--img img {
+          height: 4.7rem; } }
       @media only screen and (max-width: 767px) {
         .footer__contact--img img {
           margin-bottom: 6rem; } }
@@ -341,8 +349,9 @@ body {
       color: #fff;
       padding: 0 1rem;
       padding: 1rem 0;
+      padding-right: 1rem;
       text-decoration: none;
-      font-size: 1.7rem;
+      font-size: 1.6rem;
       display: flex;
       align-items: center; }
       .footer__contact a span {
@@ -358,11 +367,13 @@ body {
     justify-content: center;
     color: #fff;
     padding: 0 2rem; }
+    @media only screen and (max-width: 1200px) {
+      .footer__more {
+        padding: 0; } }
     @media only screen and (max-width: 767px) {
       .footer__more {
         order: 1;
         border: none;
-        padding: 0;
         justify-content: space-around; } }
     @media only screen and (max-width: 480px) {
       .footer__more {
@@ -372,6 +383,9 @@ body {
       font-size: 1.6rem;
       padding: 0 3.5rem;
       letter-spacing: 0.5px; }
+      @media only screen and (max-width: 979px) {
+        .footer__more--ul {
+          padding: 0 2rem; } }
       @media only screen and (max-width: 767px) {
         .footer__more--ul {
           margin-top: 7rem; } }
@@ -397,6 +411,9 @@ body {
     flex-direction: column;
     margin-left: 9rem;
     align-items: flex-end; }
+    @media only screen and (max-width: 979px) {
+      .footer__form {
+        margin-left: 2rem; } }
     @media only screen and (max-width: 767px) {
       .footer__form {
         margin-left: 0;
