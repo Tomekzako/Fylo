@@ -187,19 +187,36 @@ $font-primary-light: #827eca;
     background-position: left center;
     flex: 0 0 40%;
     height: 34rem;
+    width: 100%;
+
+    @media only screen and(max-width: $bp-small) {
+      margin: 8rem 0;
+      background-position: center;
+      height: 30rem;
+      flex: none;
+
+    }
   }
 
   &__box {
     margin: 9rem 0 12rem;
     flex: 1;
-
     display: flex;
     flex-wrap: wrap;
+
+    @media only screen and(max-width: $bp-small) {
+      margin: 0 0 8rem;
+    }
   }
 
   &__product {
     padding: 3rem 5rem 2rem;
     text-align: left;
+
+    @media only screen and(max-width: $bp-small) {
+      padding: 0;
+      margin-top: 4rem;
+    }
 
     &--text {
       font-size: $default-font-size;
@@ -216,9 +233,19 @@ $font-primary-light: #827eca;
     color: $font-primary;
     line-height: 1.4;
     font-weight: 600;
+
+    @media only screen and(max-width: $bp-small) {
+      width: 100%;
+    }
   }
 
   &__form {
+    @media only screen and(max-width: $bp-small) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
     input {
       width: 35%;
       font-size: $default-font-size;
@@ -229,6 +256,16 @@ $font-primary-light: #827eca;
       margin-right: 2rem;
       transition: all 0.3s;
       border-bottom: 3px solid transparent;
+
+      @media only screen and(max-width: $bp-small) {
+        width: 60%;
+        margin-right: 0;
+        margin-bottom: 2rem;
+      }
+
+      @media only screen and(max-width: $bp-smallest) {
+        width: 100%;
+      }
 
       &:focus {
         outline: none;
@@ -259,6 +296,14 @@ $font-primary-light: #827eca;
 
     &--btn {
       padding: 1.3rem 6.5rem;
+
+      @media only screen and(max-width: $bp-small) {
+        width: 60%;
+      }
+
+      @media only screen and(max-width: $bp-smallest) {
+        width: 100%;
+      }
     }
   }
 }
@@ -269,7 +314,13 @@ $font-primary-light: #827eca;
   background-color: $font-primary-dark;
 
   @media only screen and(max-width: $bp-large) {
-    padding: 20rem 4rem 15rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  @media only screen and(max-width: $bp-small) {
+    padding-left: 6rem;
+    padding-right: 6rem;
   }
 
   &__contact {
@@ -311,11 +362,30 @@ $font-primary-light: #827eca;
     color: #fff;
     padding: 0 2rem;
 
+    @media only screen and(max-width: $bp-small) {
+      order: 1;
+      border: none;
+      padding: 0;
+    }
+
+    @media only screen and(max-width: $bp-smallest) {
+      flex-direction: column;
+    }
+
     &--ul {
       list-style-type: none;
       font-size: $default-font-size;
       padding: 0 3.5rem;
       letter-spacing: 0.5px;
+
+      @media only screen and(max-width: $bp-small) {
+        margin-top: 4rem;
+      }
+
+      @media only screen and(max-width: $bp-smallest) {
+        margin-top: 4rem;
+        padding: 0;
+      }
     }
 
     &--li {
@@ -346,6 +416,12 @@ $font-primary-light: #827eca;
     flex-direction: column;
     margin-left: 9rem;
     align-items: flex-end;
+
+    @media only screen and(max-width: $bp-small) {
+      margin-left: 0;
+      margin-top: 4rem;
+    }
+
 
     &--text {
       color: #fff;
