@@ -205,10 +205,13 @@ $font-primary-light: #827eca;
     height: 34rem;
     width: 100%;
 
+    @media only screen and(max-width: $bp-medium) {
+      height: 30rem;
+    }
+
     @media only screen and(max-width: $bp-small) {
       margin: 8rem 0;
       background-position: center;
-      height: 30rem;
       flex: none;
 
     }
@@ -228,6 +231,11 @@ $font-primary-light: #827eca;
   &__product {
     padding: 3rem 5rem 2rem;
     text-align: left;
+
+    @media only screen and(max-width: $bp-medium) {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
 
     @media only screen and(max-width: $bp-small) {
       padding: 0;
@@ -345,13 +353,34 @@ $font-primary-light: #827eca;
     flex-direction: column;
     align-items: flex-start;
 
-    &--logo {
-      margin-bottom: 3.5rem;
-      height: 5.7rem;
+    @media only screen and(min-width: $bp-smallest) and(max-width: $bp-small) {
+      flex-direction: row;
+      justify-content: space-around;
+      flex-wrap: wrap;
     }
+
+    &--img {
+      @media only screen and(min-width: $bp-smallest) and(max-width: $bp-small) {
+        width: 100%;
+        text-align: center;
+      }
+
+      img {
+        margin-bottom: 3.5rem;
+        height: 5.7rem;
+        padding: 0 1rem;
+
+        @media only screen and(max-width: $bp-small) {
+          margin-bottom: 6rem;
+        }
+      }
+    }
+
 
     a {
       color: #fff;
+      padding: 0 1rem;
+
       padding: 1rem 0;
       text-decoration: none;
       font-size: 1.7rem;
@@ -382,6 +411,7 @@ $font-primary-light: #827eca;
       order: 1;
       border: none;
       padding: 0;
+      justify-content: space-around;
     }
 
     @media only screen and(max-width: $bp-smallest) {
@@ -395,11 +425,10 @@ $font-primary-light: #827eca;
       letter-spacing: 0.5px;
 
       @media only screen and(max-width: $bp-small) {
-        margin-top: 4rem;
+        margin-top: 7rem;
       }
 
       @media only screen and(max-width: $bp-smallest) {
-        margin-top: 4rem;
         padding: 0;
       }
     }
@@ -435,7 +464,7 @@ $font-primary-light: #827eca;
 
     @media only screen and(max-width: $bp-small) {
       margin-left: 0;
-      margin-top: 4rem;
+      margin-top: 6rem;
     }
 
 
@@ -453,6 +482,10 @@ $font-primary-light: #827eca;
       font-size: 1.4rem;
       margin-bottom: 2rem;
       width: 100%;
+
+      @media only screen and(min-width: $bp-smallest) and(max-width: $bp-small) {
+        width: 80%;
+      }
 
       &:focus {
         outline: none;
