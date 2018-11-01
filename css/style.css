@@ -94,10 +94,10 @@ body {
     border: 3px solid #06d79d;
     background-color: transparent;
     color: #06d79d;
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+    box-shadow: 0 1rem 2rem rgba(255, 255, 255, 0.15);
     transform: translateY(-2px); }
   .btn-main:active {
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.15);
     transform: translateY(-1px); }
 
 .header {
@@ -111,6 +111,12 @@ body {
   @media only screen and (max-width: 1200px) {
     .header {
       padding: 4rem; } }
+  @media only screen and (max-width: 767px) {
+    .header {
+      padding: 7rem; } }
+  @media only screen and (max-width: 480px) {
+    .header {
+      padding: 6rem 4rem; } }
   .header__nav {
     display: flex;
     align-items: center; }
@@ -138,7 +144,7 @@ body {
 
 .banner {
   background: linear-gradient(to right, #100a6e, #827eca);
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
   color: #fff;
   min-height: 95vh;
   display: flex;
@@ -150,6 +156,9 @@ body {
     .banner {
       background: linear-gradient(to bottom, #100a6e, #827eca);
       min-height: auto; } }
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    .banner {
+      padding: 0 7rem; } }
   .banner__main {
     display: flex;
     align-items: center; }
@@ -196,6 +205,9 @@ body {
   @media only screen and (max-width: 1200px) {
     .products {
       padding: 0 4rem; } }
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    .products {
+      padding: 0 7rem; } }
   .products__banner {
     background-image: url("../images/illustration-features.svg");
     background-size: contain;
@@ -249,7 +261,7 @@ body {
     width: 35%;
     font-size: 1.6rem;
     border-radius: 5px;
-    padding: 1.6rem 4rem 1.3rem;
+    padding: 1.4rem 4rem 1.1rem;
     border: none;
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
     margin-right: 2rem;
@@ -278,7 +290,7 @@ body {
   .products__form ::-moz-placeholder {
     color: #ccc; }
   .products__form--btn {
-    padding: 1.3rem 6.5rem; }
+    padding: 1.1rem 8rem; }
     @media only screen and (max-width: 767px) {
       .products__form--btn {
         width: 60%; } }
@@ -287,17 +299,17 @@ body {
         width: 100%; } }
 
 .footer {
-  padding: 20rem 0 15rem;
-  clip-path: polygon(0 0, 100% 10rem, 100% 100%, 0 100%);
+  padding: 23rem 0 15rem;
+  clip-path: polygon(0 0, 100% 13rem, 100% 100%, 0 100%);
   background-color: #07043b; }
   @media only screen and (max-width: 1200px) {
     .footer {
       padding-left: 4rem;
       padding-right: 4rem; } }
-  @media only screen and (max-width: 767px) {
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
     .footer {
-      padding-left: 6rem;
-      padding-right: 6rem; } }
+      padding-left: 7rem;
+      padding-right: 7rem; } }
   .footer__contact {
     flex: 0 0 23%;
     display: flex;
