@@ -1,0 +1,48 @@
+/* ----- HEADINGS ----- */
+
+.heading-primary {
+    font-size: 4rem;
+    text-transform: capitalize;
+    line-height: 1.4;
+}
+
+.heading-secondary {
+    font-size: 3.25rem;
+    text-transform: capitalize;
+    line-height: 1.4;
+    color: $font-primary;
+}
+
+.heading-tertiary {
+    font-size: 2.1rem;
+    color: $font-primary;
+}
+
+/* ----- BTN ----- */
+
+.btn-main {
+    display: inline-block;
+    color: #fff;
+    background-color: $btn-main-color;
+    padding: 1.1rem 3rem;
+    border: 3px solid $btn-main-color;
+    font-size: $default-font-size;
+    text-decoration: none;
+    border-radius: 5px;
+    letter-spacing: 0.5px;
+    transition: all 0.2s;
+    font-weight: 600;
+
+    &:hover {
+        border: 3px solid $btn-main-color;
+        background-color: transparent;
+        color: $btn-main-color;
+        box-shadow: 0 1rem 2rem rgba(256, 256, 256, .15);
+        transform: translateY(-2px);
+    }
+
+    &:active {
+        box-shadow: 0 0.5rem 1rem rgba(256, 256, 256, 0.15);
+        transform: translateY(-1px);
+    }
+}
