@@ -4,6 +4,8 @@
     font-size: 4rem;
     text-transform: capitalize;
     line-height: 1.4;
+    animation: MoveInLeft 1s ease-out;
+
 }
 
 .heading-secondary {
@@ -45,4 +47,9 @@
         box-shadow: 0 0.5rem 1rem rgba(256, 256, 256, 0.15);
         transform: translateY(-1px);
     }
+}
+
+.btn--animated {
+    animation: MoveInBottom 0.5s ease-in 0.85s;
+    animation-fill-mode: backwards;
 }
