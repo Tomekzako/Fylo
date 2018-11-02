@@ -9,100 +9,102 @@ $font-primary: #100a6e;
 $font-primary-light: #827eca;
 $btn-main-color: #06d79d;
 
-
 *,
 *::after,
 *::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
 @media (min-width: $bp-small+1) {
-    @for $i from 1 through 12 {
-        .col-#{$i} {
-            width: (100%/12)*$i;
-        }
+  @for $i from 1 through 12 {
+    .col-#{$i} {
+      width: (100%/12) * $i;
     }
+  }
 }
 
-[class*='col-'] {
-    min-height: 1px;
+[class*="col-"] {
+  min-height: 1px;
 
-    @media (max-width: $bp-small) {
-        width: 100%;
-    }
+  @media (max-width: $bp-small) {
+    width: 100%;
+  }
 }
 
 html {
-    font-size: 62.5%;
-    box-sizing: border-box;
+  font-size: 62.5%;
+  box-sizing: border-box;
 
-    @media only screen and(max-width: $bp-large) {
-        font-size: 55%;
-    }
+  @media only screen and(max-width: $bp-large) {
+    font-size: 55%;
+  }
 
-    @media only screen and(max-width: $bp-medium) {
-        font-size: 50%;
-    }
+  @media only screen and(max-width: $bp-medium) {
+    font-size: 50%;
+  }
 
-    @media only screen and(max-width: $bp-small) {
-        font-size: 45%;
-    }
+  @media only screen and(max-width: $bp-small) {
+    font-size: 45%;
+  }
+
+  @media only screen and(max-width: $bp-smallest) {
+    font-size: 40%;
+  }
 }
 
 body {
-    font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 .flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    max-width: 1200px;
-    position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 1200px;
+  position: relative;
 
-    @media only screen and(max-width: $bp-small) {
-        flex-direction: column;
-    }
+  @media only screen and(max-width: $bp-small) {
+    flex-direction: column;
+  }
 }
 
-
 @keyframes MoveInBottom {
-    0% {
-        opacity: 0;
-        transform: translateY(3rem);
-    }
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
 
-    100% {
-        opacity: 1;
-        transform: translate(0);
-    }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
 }
 
 @keyframes MoveInLeft {
-    0% {
-        opacity: 0;
-        transform: translateX(-10rem);
-    }
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
 
-    80% {
-        transform: translateX(1rem);
-    }
+  80% {
+    transform: translateX(1rem);
+  }
 
-    100% {
-        opacity: 1;
-        transform: translate(0);
-    }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
 }
 
 .slide-in {
-    opacity: 0;
-    transition: all 1s;
-    transform: translateX(-30%) scale(0.95);
+  opacity: 0;
+  transition: all 1s;
+  transform: translateX(-30%) scale(0.95);
 
-    &.active {
-        opacity: 1;
-        transform: translateX(0%) scale(1);
-    }
+  &.active {
+    opacity: 1;
+    transform: translateX(0%) scale(1);
+  }
 }
