@@ -200,7 +200,6 @@ body {
         flex-direction: column;
         margin: 20rem 0; } }
   .banner__info {
-    flex: 0 0 58%;
     padding-right: 3rem; }
     @media only screen and (max-width: 767px) {
       .banner__info {
@@ -214,7 +213,6 @@ body {
       padding: 2rem 8.2rem;
       margin-top: 4rem; }
   .banner__banner {
-    flex: 1;
     background-image: url("../images/illustration-hero.svg");
     background-size: contain;
     background-repeat: no-repeat;

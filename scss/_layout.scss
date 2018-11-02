@@ -90,7 +90,7 @@
     }
 
     &__info {
-        flex: 0 0 58%;
+        // flex: 0 0 58%;
         padding-right: 3rem;
 
         @media only screen and(max-width: $bp-small) {
@@ -109,7 +109,7 @@
     }
 
     &__banner {
-        flex: 1;
+        // flex: 1;
         background-image: url("../images/illustration-hero.svg");
         background-size: contain;
         background-repeat: no-repeat;
