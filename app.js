@@ -1,6 +1,5 @@
 window.addEventListener('DOMContentLoaded', function () {
     const image = document.querySelector('.products__banner');
-    console.log(image);
 
     function slideIn() {
         const offsetTop = image.getBoundingClientRect().top + document.documentElement.scrollTop;

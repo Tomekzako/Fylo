@@ -177,11 +177,15 @@ body {
 
 .banner {
   background: linear-gradient(to right, #100a6e, #827eca);
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
   color: #fff;
-  min-height: 95vh;
+  min-height: 85vh;
   display: flex;
   align-items: center; }
+  @supports (-webkit-clip-path: polygon(0 0)) or (clip-path: polygon(0 0)) {
+    .banner {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+      height: 95vh; } }
   @media only screen and (max-width: 1200px) {
     .banner {
       padding: 0 5rem; } }
@@ -339,9 +343,13 @@ body {
         width: 100%; } }
 
 .footer {
-  padding: 23rem 0 15rem;
-  clip-path: polygon(0 0, 100% 13rem, 100% 100%, 0 100%);
+  padding: 15rem 0;
   background-color: #07043b; }
+  @supports (-webkit-clip-path: polygon(0 0)) or (clip-path: polygon(0 0)) {
+    .footer {
+      -webkit-clip-path: polygon(0 0, 100% 13rem, 100% 100%, 0 100%);
+      clip-path: polygon(0 0, 100% 13rem, 100% 100%, 0 100%);
+      padding: 23rem 0 15rem; } }
   @media only screen and (max-width: 1200px) {
     .footer {
       padding-left: 5rem;
