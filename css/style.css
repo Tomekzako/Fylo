@@ -48,10 +48,7 @@ html {
       font-size: 50%; } }
   @media only screen and (max-width: 767px) {
     html {
-      font-size: 46%; } }
-  @media only screen and (max-width: 480px) {
-    html {
-      font-size: 40%; } }
+      font-size: 45%; } }
 
 body {
   font-family: 'Raleway', sans-serif; }
@@ -83,6 +80,14 @@ body {
   100% {
     opacity: 1;
     transform: translate(0); } }
+
+.slide-in {
+  opacity: 0;
+  transition: all 1s;
+  transform: translateX(-30%) scale(0.95); }
+  .slide-in.active {
+    opacity: 1;
+    transform: translateX(0%) scale(1); }
 
 /* ----- HEADINGS ----- */
 .heading-primary {
@@ -447,7 +452,8 @@ body {
       color: #fff;
       font-size: 1.6rem;
       text-align: right;
-      padding-bottom: 3rem; }
+      padding-bottom: 3rem;
+      width: 100%; }
     .footer__form--input {
       border: none;
       border-radius: 3px;
